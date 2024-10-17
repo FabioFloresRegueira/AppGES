@@ -16,7 +16,7 @@ class _MyPanelsState extends State<Paineis> {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [
-          //
+          // Ativos
           Container(
             decoration: BoxDecoration(
                 gradient: const LinearGradient(colors: [
@@ -30,19 +30,24 @@ class _MyPanelsState extends State<Paineis> {
             child: const Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                Text(
-                  '33',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      '33',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 25,
                 ),
                 Text(
-                  'ativos',
-                  style: TextStyle(color: Colors.black),
+                  'Ativos',
+                  style: TextStyle(fontSize: 13, color: Colors.black),
                 ),
               ],
             ),
@@ -50,8 +55,7 @@ class _MyPanelsState extends State<Paineis> {
           const SizedBox(
             width: 20,
           ),
-
-          //
+          // INATIVOS
           Container(
             decoration: BoxDecoration(
                 gradient: const LinearGradient(colors: [
@@ -62,22 +66,27 @@ class _MyPanelsState extends State<Paineis> {
                 borderRadius: BorderRadius.circular(12)),
             padding: const EdgeInsets.all(12),
             width: 150,
-            child: Column(
+            child: const Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                IconButton(
-                  icon: const Icon(Icons.volume_up),
-                  color: Colors.black,
-                  tooltip: 'Exibe ativos',
-                  onPressed: () {
-                    setState(() {
-                      //_volume += 10;
-                    });
-                  },
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      '2',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
                 ),
-                const Text(
-                  'ativos',
-                  style: TextStyle(color: Colors.black),
+                SizedBox(
+                  height: 25,
+                ),
+                Text(
+                  'Inativos',
+                  style: TextStyle(fontSize: 13, color: Colors.black),
                 ),
               ],
             ),
@@ -85,6 +94,7 @@ class _MyPanelsState extends State<Paineis> {
           const SizedBox(
             width: 20,
           ),
+          // ATÉ 30 DIAS
           Container(
             decoration: BoxDecoration(
                 gradient: const LinearGradient(colors: [
@@ -95,22 +105,27 @@ class _MyPanelsState extends State<Paineis> {
                 borderRadius: BorderRadius.circular(12)),
             padding: const EdgeInsets.all(12),
             width: 150,
-            child: Column(
+            child: const Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                IconButton(
-                  icon: const Icon(Icons.volume_up),
-                  color: Colors.black,
-                  tooltip: 'Exibe até 30 dias',
-                  onPressed: () {
-                    setState(() {
-                      //_volume += 10;
-                    });
-                  },
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      '5',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
                 ),
-                const Text(
-                  'até 30 dias',
-                  style: TextStyle(color: Colors.black),
+                SizedBox(
+                  height: 25,
+                ),
+                Text(
+                  'Até 30 Dias',
+                  style: TextStyle(fontSize: 13, color: Colors.black),
                 ),
               ],
             ),
@@ -118,6 +133,7 @@ class _MyPanelsState extends State<Paineis> {
           const SizedBox(
             width: 20,
           ),
+          // 31 até 60 dias
           Container(
             decoration: BoxDecoration(
                 gradient: const LinearGradient(colors: [
@@ -128,22 +144,27 @@ class _MyPanelsState extends State<Paineis> {
                 borderRadius: BorderRadius.circular(12)),
             padding: const EdgeInsets.all(12),
             width: 150,
-            child: Column(
+            child: const Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                IconButton(
-                  icon: const Icon(Icons.volume_up),
-                  color: Colors.black,
-                  tooltip: 'Exibe de 31 até 60 dias',
-                  onPressed: () {
-                    setState(() {
-                      //_volume += 10;
-                    });
-                  },
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      '1',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
                 ),
-                const Text(
+                SizedBox(
+                  height: 25,
+                ),
+                Text(
                   '31 até 60 dias',
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(fontSize: 13, color: Colors.black),
                 ),
               ],
             ),
@@ -151,6 +172,7 @@ class _MyPanelsState extends State<Paineis> {
           const SizedBox(
             width: 20,
           ),
+          // 61 até 90 dias
           Container(
             decoration: BoxDecoration(
                 gradient: const LinearGradient(colors: [
@@ -161,22 +183,27 @@ class _MyPanelsState extends State<Paineis> {
                 borderRadius: BorderRadius.circular(12)),
             padding: const EdgeInsets.all(12),
             width: 150,
-            child: Column(
+            child: const Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                IconButton(
-                  icon: const Icon(Icons.volume_up),
-                  color: Colors.black,
-                  tooltip: 'Exibe de 61 até 90 dias',
-                  onPressed: () {
-                    setState(() {
-                      //_volume += 10;
-                    });
-                  },
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      '7',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
                 ),
-                const Text(
+                SizedBox(
+                  height: 25,
+                ),
+                Text(
                   '61 até 90 dias',
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(fontSize: 13, color: Colors.black),
                 ),
               ],
             ),
@@ -184,6 +211,7 @@ class _MyPanelsState extends State<Paineis> {
           const SizedBox(
             width: 20,
           ),
+          // Maior que 90 dias
           Container(
             decoration: BoxDecoration(
                 gradient: const LinearGradient(colors: [
@@ -194,55 +222,27 @@ class _MyPanelsState extends State<Paineis> {
                 borderRadius: BorderRadius.circular(12)),
             padding: const EdgeInsets.all(12),
             width: 150,
-            child: Column(
+            child: const Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                IconButton(
-                  icon: const Icon(Icons.volume_up),
-                  color: Colors.black,
-                  tooltip: 'Exibe maior que 90 dias',
-                  onPressed: () {
-                    setState(() {
-                      //_volume += 10;
-                    });
-                  },
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      '18',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
                 ),
-                const Text(
-                  'maior que 90 dias',
-                  style: TextStyle(color: Colors.black),
+                SizedBox(
+                  height: 25,
                 ),
-              ],
-            ),
-          ),
-          const SizedBox(
-            width: 20,
-          ),
-          Container(
-            decoration: BoxDecoration(
-                gradient: const LinearGradient(colors: [
-                  Colors.grey,
-                  Colors.white,
-                ]),
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(12)),
-            padding: const EdgeInsets.all(12),
-            width: 150,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                IconButton(
-                  icon: const Icon(Icons.volume_up),
-                  color: Colors.black,
-                  tooltip: 'Exibe inativos',
-                  onPressed: () {
-                    setState(() {
-                      //_volume += 10;
-                    });
-                  },
-                ),
-                const Text(
-                  'inativos',
-                  style: TextStyle(color: Colors.black),
+                Text(
+                  'Maior que 90 dias',
+                  style: TextStyle(fontSize: 13, color: Colors.black),
                 ),
               ],
             ),

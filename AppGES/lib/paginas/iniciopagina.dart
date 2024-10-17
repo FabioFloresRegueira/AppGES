@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:MonitoraTags/paineis/paineis.dart';
 import 'package:MonitoraTags/paginas/listavigencias.dart';
-import 'package:intl/intl.dart';
-import 'package:MonitoraTags/componentes/barrainferior.dart';
+import 'package:MonitoraTags/componentes/barinferiorpesquisa.dart';
 import 'package:MonitoraTags/componentes/menupopup.dart';
 
 class InicioPagina extends StatefulWidget {
@@ -16,7 +16,7 @@ class _InicioPagina extends State<InicioPagina> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[800],
+      backgroundColor: Colors.blueGrey,
       body: SafeArea(
         child: Column(
           children: [
@@ -52,39 +52,27 @@ class _InicioPagina extends State<InicioPagina> {
                           )
                         ],
                       ),
-                      // USUARIO
+                      // LOOUT
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          // USUARIO
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Colors.blueGrey[600],
-                                borderRadius: BorderRadius.circular(12)),
-                            padding: const EdgeInsets.all(8),
-                            child: IconButton(
-                              //Icons.arrow_drop_down_circle,
-                              icon: const Icon(Icons.supervised_user_circle),
-                              onPressed: () => {},
+                          IconButton(
+                            icon: const Icon(
+                              Icons.logout,
                               color: Colors.white,
                             ),
+                            tooltip: 'Sair',
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          ),
+                          const Text(
+                            'Sair',
+                            style: TextStyle(color: Colors.white),
                           ),
                           const SizedBox(
                             width: 20,
                           ),
-                          // CONFIGURAÇÃO
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Colors.blueGrey[600],
-                                borderRadius: BorderRadius.circular(12)),
-                            padding: const EdgeInsets.all(8),
-                            child: IconButton(
-                              //Icons.arrow_drop_down_circle,
-                              icon: const Icon(Icons.settings),
-                              onPressed: () => {},
-                              color: Colors.white,
-                            ),
-                          )
                         ],
                       ),
                     ],
@@ -110,7 +98,6 @@ class _InicioPagina extends State<InicioPagina> {
                   const SizedBox(
                     height: 25,
                   ),
-                  //
                   // PAINEIS DE VIGENCIAS
                   const Paineis()
                 ],
@@ -163,8 +150,8 @@ class _InicioPagina extends State<InicioPagina> {
           ],
         ),
       ),
-      //BOTTOM NAVIGATION BAR
-      bottomNavigationBar: const AppBarBottom(
+      //APPBarBottom
+      bottomNavigationBar: const AppBarBottomPesq(
         fabLocation: FloatingActionButtonLocation.endDocked,
         // ignore: dead_code
         shape: true ? CircularNotchedRectangle() : null,

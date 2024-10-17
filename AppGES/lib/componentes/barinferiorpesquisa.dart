@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AppBarBottom extends StatelessWidget {
-  const AppBarBottom({
+class AppBarBottomPesq extends StatelessWidget {
+  const AppBarBottomPesq({
     super.key,
     this.fabLocation = FloatingActionButtonLocation.endDocked,
     this.shape = const CircularNotchedRectangle(),
@@ -20,7 +20,7 @@ class AppBarBottom extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       shape: shape,
-      color: Colors.blueGrey[800],
+      color: Colors.blueGrey,
       child: IconTheme(
         data: IconThemeData(color: Theme.of(context).colorScheme.onPrimary),
         child: Row(
@@ -30,7 +30,7 @@ class AppBarBottom extends StatelessWidget {
               tooltip: 'Menu Lateral',
               icon: const Icon(Icons.search),
               onPressed: () {
-                _configurandoModalBottomSheet(context);
+                _configPesquisaModalBottomSheet(context);
               },
             ),
           ],
@@ -43,7 +43,7 @@ class AppBarBottom extends StatelessWidget {
 /* ********************************************* */
 // Bottom Modal Sheet
 /* ********************************************* */
-void _configurandoModalBottomSheet(context) {
+void _configPesquisaModalBottomSheet(context) {
   showModalBottomSheet(
       context: context,
       builder: (BuildContext bc) {

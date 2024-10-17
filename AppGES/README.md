@@ -28,11 +28,19 @@ samples, guidance on mobile development, and a full API reference.
 # pacotes
 # https://pub.dev/packages/http
 run flutter pub add http
+run flutter pub add shared_preferences
+
 run flutter pub add google_fonts
 
 
 
 # gerando o APK 
 run flutter build apk
+
+
+Componentes utilizados: 
+# shared_preferences 2.3.2 
+https://pub.dev/packages/shared_preferences/install
+https://medium.com/@diegokalschne/armazenando-dados-com-shared-preferences-9b2c222ec1e
 
 
