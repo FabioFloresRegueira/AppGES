@@ -1,3 +1,4 @@
+import 'package:MonitoraTags/paginas/inforitenspagina.dart';
 import 'package:MonitoraTags/paginas/loginpagina.dart';
 import 'package:flutter/material.dart';
 import 'package:MonitoraTags/paginas/iniciopagina.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
           '/InicioPagina': (context) => const InicioPagina(),
           '/ConfigPagina': (context) => const ConfigPagina(),
           '/CriaContaPagina': (context) => const CriaContaPagina(),
+          '/InforitensPagina': (context) => const InforItensPagina(),
         });
   }
 }

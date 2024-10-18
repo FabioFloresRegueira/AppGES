@@ -10,11 +10,14 @@ showAlertDialog1(BuildContext context, String infor, String vigencia) {
 
   AlertDialog alerta = AlertDialog(
     backgroundColor: Colors.white,
+    //
     title: Text(
-        'Atenção !, a data final para renovação é ${vigencia.substring(0, 10)}'),
+        'Atenção, para a data final de renovação ${vigencia.substring(0, 10)}.'),
     titleTextStyle: const TextStyle(fontSize: 20, color: Colors.redAccent),
+    //
     content: Text(infor),
     contentTextStyle: const TextStyle(fontSize: 15, color: Colors.black),
+    //
     actions: [
       okButton,
     ],

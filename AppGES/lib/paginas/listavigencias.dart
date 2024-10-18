@@ -1,3 +1,4 @@
+import 'package:MonitoraTags/paginas/inforitenspagina.dart';
 import 'package:flutter/material.dart';
 import 'package:MonitoraTags/asyncdb.dart';
 import 'package:MonitoraTags/componentes/caixadedialogo.dart';
@@ -84,10 +85,20 @@ class _ListavigenciasState extends State<Listavigencias> {
                                   ),
                           ),
                           onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => InforItensPagina(
+                                  data: snapshot.data?[index],
+                                ),
+                              ),
+                            );
+                            /*
                             showAlertDialog1(
                                 context,
                                 snapshot.data![index]['infor'].toString(),
                                 snapshot.data![index]['vigencia'].toString());
+                            */
                           }),
                     ),
                     //
