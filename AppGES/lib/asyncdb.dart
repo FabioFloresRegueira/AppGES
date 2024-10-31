@@ -21,7 +21,9 @@ void stopTimer() {
 
 Future<List<dynamic>> asyncdb(String metodo) async {
   //await http.get(Uri.parse('http://localhost:3001/monitorar/api/tags'));
-  final xUrl = 'http://192.168.0.85:3001/monitorar/api/tags/$metodo';
+  //final xUrl = 'http://192.168.0.85:3001/monitorar/api/tags/$metodo';
+  final xUrl =
+      'https://fabio4678.c44.integrator.host/monitorar/api/tags/$metodo';
 
   try {
     // Faz uma solicitação GET para a URL especificada
